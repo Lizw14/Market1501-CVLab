@@ -1,0 +1,21 @@
+net: "pose_train_test.prototxt"
+
+#base_lr: 0.000080
+base_lr: 0.00000005
+momentum: 0.9
+weight_decay: 0.0005
+iter_size:2
+
+# The learning rate policy
+lr_policy: "multistep"
+gamma: 0.5
+stepvalue: 20000
+stepvalue: 40000
+stepvalue: 60000
+stepvalue: 80000
+display: 20
+max_iter: 100000
+snapshot: 2000
+snapshot_prefix: "/home/lizhuowan/Market_CPM/Finetune_10910/1/caffemodel/pose3"
+# solver mode: CPU or GPU
+solver_mode: GPU

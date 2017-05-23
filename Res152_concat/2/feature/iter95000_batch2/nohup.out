@@ -1,0 +1,41 @@
+E0313 14:17:23.932781  1709 extract_features.cpp:52] Using GPU
+E0313 14:17:23.933562  1709 extract_features.cpp:58] Using Device_id=1
+E0313 14:17:28.029654  1709 extract_features.cpp:133] Extacting Features
+E0313 14:19:03.601348  1709 extract_features.cpp:166] Extracted features of 1000 query images for feature blob id_pool5
+E0313 14:20:38.495537  1709 extract_features.cpp:166] Extracted features of 2000 query images for feature blob id_pool5
+E0313 14:22:13.546145  1709 extract_features.cpp:166] Extracted features of 3000 query images for feature blob id_pool5
+E0313 14:23:48.539360  1709 extract_features.cpp:166] Extracted features of 4000 query images for feature blob id_pool5
+E0313 14:25:23.599148  1709 extract_features.cpp:166] Extracted features of 5000 query images for feature blob id_pool5
+E0313 14:26:58.726642  1709 extract_features.cpp:166] Extracted features of 6000 query images for feature blob id_pool5
+E0313 14:28:33.834352  1709 extract_features.cpp:166] Extracted features of 7000 query images for feature blob id_pool5
+E0313 14:30:08.794747  1709 extract_features.cpp:166] Extracted features of 8000 query images for feature blob id_pool5
+E0313 14:31:43.579728  1709 extract_features.cpp:166] Extracted features of 9000 query images for feature blob id_pool5
+E0313 14:33:18.420526  1709 extract_features.cpp:166] Extracted features of 10000 query images for feature blob id_pool5
+E0313 14:34:53.097839  1709 extract_features.cpp:166] Extracted features of 11000 query images for feature blob id_pool5
+E0313 14:36:27.986496  1709 extract_features.cpp:166] Extracted features of 12000 query images for feature blob id_pool5
+E0313 14:38:02.743528  1709 extract_features.cpp:166] Extracted features of 13000 query images for feature blob id_pool5
+E0313 14:39:37.572327  1709 extract_features.cpp:166] Extracted features of 14000 query images for feature blob id_pool5
+E0313 14:41:12.298871  1709 extract_features.cpp:166] Extracted features of 15000 query images for feature blob id_pool5
+E0313 14:42:47.095461  1709 extract_features.cpp:166] Extracted features of 16000 query images for feature blob id_pool5
+E0313 14:44:21.859490  1709 extract_features.cpp:166] Extracted features of 17000 query images for feature blob id_pool5
+E0313 14:45:56.652705  1709 extract_features.cpp:166] Extracted features of 18000 query images for feature blob id_pool5
+E0313 14:47:31.716495  1709 extract_features.cpp:166] Extracted features of 19000 query images for feature blob id_pool5
+E0313 14:48:41.290014  1709 extract_features.cpp:177] Extracted features of 19732 query images for feature blob id_pool5
+E0313 14:48:41.290477  1709 extract_features.cpp:182] Successfully extracted the features!
+./test
+time 1: 116.176317
+time 2: 117.484082
+done!
+E0313 14:50:43.796774  1926 extract_features.cpp:52] Using GPU
+E0313 14:50:43.797255  1926 extract_features.cpp:58] Using Device_id=1
+E0313 14:50:47.044591  1926 extract_features.cpp:133] Extacting Features
+E0313 14:52:22.861734  1926 extract_features.cpp:166] Extracted features of 1000 query images for feature blob id_pool5
+E0313 14:53:28.276523  1926 extract_features.cpp:177] Extracted features of 1688 query images for feature blob id_pool5
+E0313 14:53:28.276948  1926 extract_features.cpp:182] Successfully extracted the features!
+./query
+Traceback (most recent call last):
+  File "/home/lizhuowan/caffe/lmdb2mat.py", line 40, in <module>
+    main(sys.argv)
+  File "/home/lizhuowan/caffe/lmdb2mat.py", line 10, in main
+    batch_num = int(sys.argv[2]);
+ValueError: invalid literal for int() with base 10: '422*2'

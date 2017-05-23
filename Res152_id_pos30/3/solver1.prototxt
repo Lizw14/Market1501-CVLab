@@ -1,0 +1,39 @@
+net: "train_val_res152_1.prototxt"
+
+# sample num: 11000
+# batch size:8
+# epoch: 75
+# => max_iter:65000->130000
+# lr: 0.001->0.0001 for the final 5 epoch
+
+#base_lr: 0.001
+base_lr:0.0001
+#base_lr: 0.001
+lr_policy: "step"
+gamma: 0.1
+# stepsize: 56600
+#stepsize: 115000
+stepsize: 90000
+display: 10
+max_iter: 130000
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 5000
+snapshot_prefix: "./model/Res152_1"
+solver_mode: GPU
+
+#train_net: "models/coco/VGG16/faster_rcnn_end2end/train.prototxt"
+#base_lr: 0.001
+#lr_policy: "step"
+#gamma: 0.1
+#stepsize: 350000
+#display: 20
+#average_loss: 100
+#momentum: 0.9
+#weight_decay: 0.0005
+## We disable standard caffe solver snapshotting and implement our own snapshot
+## function
+#snapshot: 0
+# We still use the snapshot prefix, though
+#snapshot_prefix: "vgg16_faster_rcnn"
+#iter_size: 2
